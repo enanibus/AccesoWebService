@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewMainTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/titulo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewMainDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewMainTitulo"
+        android:layout_below="@+id/textViewMainTitulo"
+        android:layout_marginTop="52dp"
+        android:text="@string/dni"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/dni" />
+
+    <EditText
+        android:id="@+id/editTextMainDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewMainDNI"
+        android:layout_alignBottom="@+id/textViewMainDNI"
+        android:layout_alignRight="@+id/textViewMainTitulo"
+        android:ems="10"
+        android:hint="@string/dni"
+        android:inputType="text"
+        android:maxLength="8" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMainBorrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editTextMainDNI"
+        android:layout_alignTop="@+id/imageButtonMainInsercion"
+        android:background="#000000"
+        android:contentDescription="@string/borrado"
+        android:onClick="borrado"
+        android:src="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMainConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextMainDNI"
+        android:layout_alignTop="@+id/imageButtonMainModificacion"
+        android:background="#000000"
+        android:contentDescription="@string/consulta"
+        android:onClick="consulta"
+        android:src="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMainInsercion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMainDNI"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imageButtonMainConsulta"
+        android:background="#000000"
+        android:contentDescription="@string/insercion"
+        android:onClick="insercion"
+        android:src="@android:drawable/ic_menu_add" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMainModificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonMainBorrado"
+        android:layout_marginRight="28dp"
+        android:layout_toLeftOf="@+id/imageButtonMainBorrado"
+        android:background="#000000"
+        android:contentDescription="@string/modificacion"
+        android:onClick="modificacion"
+        android:src="@android:drawable/ic_menu_edit" />
+
+</RelativeLayout>

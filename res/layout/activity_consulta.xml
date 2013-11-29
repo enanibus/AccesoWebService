@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Consulta" >
+
+    <TextView
+        android:id="@+id/textViewConsultaDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextConsultaDNI"
+        android:layout_alignBottom="@+id/editTextConsultaDNI"
+        android:layout_alignParentLeft="true"
+        android:text="@string/dni"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/dni" />
+
+    <TextView
+        android:id="@+id/textViewConsultaNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextConsultaNombre"
+        android:layout_alignBottom="@+id/editTextConsultaNombre"
+        android:layout_alignParentLeft="true"
+        android:text="@string/nombre"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/nombre" />
+
+    <TextView
+        android:id="@+id/textViewConsultaEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextConsultaEquipo"
+        android:layout_alignBottom="@+id/editTextConsultaEquipo"
+        android:layout_alignLeft="@+id/textViewConsultaTelefono"
+        android:text="@string/equipo"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/equipo" />
+
+    <TextView
+        android:id="@+id/textViewConsultaApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextConsultaApellidos"
+        android:layout_alignBottom="@+id/editTextConsultaApellidos"
+        android:layout_alignLeft="@+id/textViewConsultaNombre"
+        android:text="@string/apellidos"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/apellidos" />
+
+    <TextView
+        android:id="@+id/textViewConsultaDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextConsultaDireccion"
+        android:layout_alignBottom="@+id/editTextConsultaDireccion"
+        android:layout_alignLeft="@+id/textViewConsultaApellidos"
+        android:text="@string/direccion"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/direccion" />
+
+    <TextView
+        android:id="@+id/textViewConsultaTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextConsultaTelefono"
+        android:layout_alignBottom="@+id/editTextConsultaTelefono"
+        android:layout_alignLeft="@+id/textViewConsultaDireccion"
+        android:text="@string/telefono"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/telefono" />
+
+    <TextView
+        android:id="@+id/textViewConsultaResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewConsultaTitulo"
+        android:layout_toRightOf="@+id/textViewConsultaTelefono"
+        android:background="#000000"
+        android:ems="10"
+        android:hint="@string/resultado_query" />
+
+    <EditText
+        android:id="@+id/editTextConsultaDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/textViewConsultaDireccion"
+        android:ems="10"
+        android:hint="@string/dni"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/editTextConsultaNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextConsultaDNI"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textViewConsultaDireccion"
+        android:ems="10"
+        android:hint="@string/nombre" 
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/editTextConsultaApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextConsultaNombre"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textViewConsultaDireccion"
+        android:ems="10"
+        android:hint="@string/apellidos" 
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/editTextConsultaDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextConsultaApellidos"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textViewConsultaDireccion"
+        android:ems="10"
+        android:hint="@string/direccion" 
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/editTextConsultaTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextConsultaDireccion"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textViewConsultaDireccion"
+        android:ems="10"
+        android:hint="@string/telefono" 
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/editTextConsultaEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextConsultaTelefono"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textViewConsultaDireccion"
+        android:ems="10"
+        android:hint="@string/equipo" 
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/textViewConsultaTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/consulta"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/imageButtonConsultaPrimero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textViewConsultaDNI"
+        android:contentDescription="@string/previous"
+        android:onClick="consultaPrimero"
+        android:src="@android:drawable/ic_media_previous" />
+
+    <ImageButton
+        android:id="@+id/imageButtonConsultaAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonConsultaPrimero"
+        android:layout_toRightOf="@+id/imageButtonConsultaPrimero"
+        android:contentDescription="@string/rewind"
+        android:onClick="consultaAnterior"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <ImageButton
+        android:id="@+id/imageButtonConsultaSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonConsultaAnterior"
+        android:layout_toRightOf="@+id/imageButtonConsultaAnterior"
+        android:contentDescription="@string/forward"
+        android:onClick="consultaSiguiente"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <ImageButton
+        android:id="@+id/imageButtonConsultaUltimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonConsultaSiguiente"
+        android:layout_toRightOf="@+id/imageButtonConsultaSiguiente"
+        android:contentDescription="@string/next"
+        android:onClick="consultaUltimo"
+        android:src="@android:drawable/ic_media_next" />
+
+</RelativeLayout>

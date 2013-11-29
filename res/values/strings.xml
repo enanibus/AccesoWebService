@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Acceso WebService</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo">Operaciones Servicio Web</string>
+    <string name="dni">DNI</string>
+    <string name="valor_DNI">DNI</string>
+    <string name="consulta">Consulta de Registros</string>
+    <string name="insercion">Inserción de Registro</string>
+    <string name="modificacion">Modificación de Registro</string>
+    <string name="borrado">Borrado de Registro</string>
+    <string name="title_activity_consulta">Consulta</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_insercion">Insercion</string>
+    <string name="title_activity_modificacion">Modificacion</string>
+    <string name="title_activity_borrado">Borrado</string>
+    <string name="title_activity_configuracion">Configuracion</string>
+    <string name="resultado_query">registro   de </string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="direccion">Dirección</string>
+    <string name="telefono">Teléfono</string>
+    <string name="equipo">Equipo</string>
+    <color name="dni">#31FFEB</color>
+    <color name="nombre">#31FFEB</color>
+    <color name="apellidos">#31FFEB</color>
+    <color name="direccion">#31FFEB</color>
+    <color name="telefono">#31FFEB</color>
+    <color name="equipo">#31FFEB</color>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+    <string name="forward">forward</string>
+    <string name="rewind">rewind</string>
+    <string name="progress_title">Procesando petición</string>
+    <string name="errorHTTP">Error en el acceso al servicio</string>
+    <string name="errorConexion">No ha sido posible recuperar datos del servicio web</string>
+    <string name="errorRegistroNoExistente">Registro no existente</string>
+    <string name="registro">Registro</string>
+    <string name="de">de</string>
+    <string name="consultaFinalizada">Consulta finalizada</string>
+    <string name="consultaCancelada">Consulta cancelada</string>
+    <string name="errorCamposObligatorios">No se permiten campos vacios</string>
+    <string name="insercionRealizada">Inserción realizada</string>
+    <string name="insercionCancelada">Inserción cancelada</string>
+    <string name="errorDebeIntroducirUnDNI">Debe introducir un DNI</string>
+    <string name="errorRegistroExistente">Registro existente</string>
+    <string name="borradoRealizado">Borrado realizado</string>
+    <string name="borradoCancelado">Borrado cancelado</string>
+    <string name="actualizacionRealizada">Actualización realizada</string>
+    <string name="actualizacionCancelada">Actualización cancelada</string>
+    
+
+</resources>
