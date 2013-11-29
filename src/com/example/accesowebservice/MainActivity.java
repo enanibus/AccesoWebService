@@ -36,11 +36,9 @@ public class MainActivity extends Activity {
 	private final int INSERCION = 2;
 	private final int MODIFICACION = 3;
 	private final int BORRADO = 4;
-//	private final int CONEXION = 5;
 	private ProgressDialog pDialog;
 	// url para consultas
 	private static final String url_query = "http://miw18.calamar.eui.upm.es/webservice/webService.query.php";
-//	private static final String url_connect = "http://miw18.calamar.eui.upm.es/webservice/webService.connect.php";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -127,7 +125,6 @@ public class MainActivity extends Activity {
 					Toast.LENGTH_SHORT).show();
 		} else {
 			Intent i = new Intent(this, Modificacion.class);
-//			i.putExtra("NUMREG", NUMREG);
 			i.putExtra("registro", queryJSON.toString());
 			startActivityForResult(i, MODIFICACION);
 		}
@@ -155,21 +152,10 @@ public class MainActivity extends Activity {
 					Toast.LENGTH_SHORT).show();
 		} else {
 			Intent i = new Intent(this, Borrado.class);
-//			i.putExtra("NUMREG", NUMREG);
 			i.putExtra("registro", queryJSON.toString());
 			startActivityForResult(i, BORRADO);
 		}
 	}
-
-//	public void conexion(View v) {
-//		actividad = Actividad.CONEXION;
-//		Intent i = new Intent(this, Configuracion.class);
-//		startActivityForResult(i, CONEXION);
-//	}
-//	
-//	private void conectar() {
-//		
-//	}
 	
 	private void clear() {
 		dni.setText("");

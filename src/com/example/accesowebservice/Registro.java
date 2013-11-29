@@ -7,7 +7,7 @@ public class Registro {
 	private String direccion;
 	private String telefono;
 	private String equipo;
-	
+
 	public Registro(String dni, String nombre, String apellidos,
 			String direccion, String telefono, String equipo) {
 		this.dni = dni;
@@ -17,7 +17,7 @@ public class Registro {
 		this.telefono = telefono;
 		this.equipo = equipo;
 	}
-	
+
 	public Registro() {
 		this.dni = "";
 		this.nombre = "";
@@ -73,6 +73,6 @@ public class Registro {
 
 	public void setEquipo(String equipo) {
 		this.equipo = equipo;
-	} 
-	
+	}
+
 }

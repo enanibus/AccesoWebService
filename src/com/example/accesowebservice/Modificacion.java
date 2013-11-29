@@ -38,7 +38,6 @@ public class Modificacion extends Activity {
 	private EditText telefono;
 	private EditText equipo;
 	private ProgressDialog pDialog;
-//	private int NUMREG;
 	private String registro;
 
 	@Override
@@ -47,7 +46,6 @@ public class Modificacion extends Activity {
 		setContentView(R.layout.activity_modificacion);
 		
 		extras = getIntent().getExtras();
-//		NUMREG = extras.getInt("NUMREG");
 		registro = extras.getString("registro");		
 		
 		dni = (EditText) findViewById(R.id.editTextModificacionDNI);
@@ -116,7 +114,7 @@ public class Modificacion extends Activity {
 		protected void onPreExecute() {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(Modificacion.this);
-			pDialog.setMessage(getString(R.string.progress_title));
+			pDialog.setMessage(getString(R.string.progress_update));
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();

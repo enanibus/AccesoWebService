@@ -1,7 +1,5 @@
 package com.example.accesowebservice;
 
-import com.example.accesowebservice.Auxiliar;
-
 import java.io.IOException;
 
 import org.apache.http.HttpEntity;
@@ -105,7 +103,7 @@ public class Insercion extends Activity {
 		protected void onPreExecute() {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(Insercion.this);
-			pDialog.setMessage(getString(R.string.progress_title));
+			pDialog.setMessage(getString(R.string.progress_insert));
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();

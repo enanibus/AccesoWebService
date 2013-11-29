@@ -33,6 +33,9 @@
     <string name="forward">forward</string>
     <string name="rewind">rewind</string>
     <string name="progress_title">Procesando petición</string>
+    <string name="progress_insert">Realizando inserción</string>
+    <string name="progress_update">Realizando actualización</string>
+    <string name="progress_delete">Realizando borrado</string>
     <string name="errorHTTP">Error en el acceso al servicio</string>
     <string name="errorConexion">No ha sido posible recuperar datos del servicio web</string>
     <string name="errorRegistroNoExistente">Registro no existente</string>

@@ -40,7 +40,6 @@ public class Borrado extends Activity {
 	private EditText telefono;
 	private EditText equipo;
 	private ProgressDialog pDialog;
-//	private int NUMREG;
 	private String registro;
 	
 	@Override
@@ -49,7 +48,6 @@ public class Borrado extends Activity {
 		setContentView(R.layout.activity_borrado);
 
 		extras = getIntent().getExtras();
-//		NUMREG = extras.getInt("NUMREG");
 		registro = extras.getString("registro");		
 		
 		dni = (EditText) findViewById(R.id.editTextBorradoDNI);
@@ -95,7 +93,7 @@ public class Borrado extends Activity {
 		protected void onPreExecute() {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(Borrado.this);
-			pDialog.setMessage(getString(R.string.progress_title));
+			pDialog.setMessage(getString(R.string.progress_delete));
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();
