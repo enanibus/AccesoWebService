@@ -96,7 +96,7 @@
         android:ems="10"
         android:hint="@string/nombre"
         android:focusable="false"
-        android:maxLength="20"  />
+        android:maxLength="15"  />
 
     <EditText
         android:id="@+id/editTextBorradoApellidos"
@@ -108,7 +108,7 @@
         android:ems="10"
         android:hint="@string/apellidos"
         android:focusable="false"
-        android:maxLength="40" />
+        android:maxLength="30" />
 
     <EditText
         android:id="@+id/editTextBorradoDireccion"
@@ -120,7 +120,7 @@
         android:ems="10"
         android:hint="@string/direccion"
         android:focusable="false"
-        android:maxLength="40"  />
+        android:maxLength="50"  />
 
     <EditText
         android:id="@+id/editTextBorradoTelefono"
@@ -132,7 +132,7 @@
         android:ems="10"
         android:hint="@string/telefono"
         android:focusable="false"
-        android:maxLength="20"  />
+        android:maxLength="12"  />
 
     <EditText
         android:id="@+id/editTextBorradoEquipo"
@@ -144,7 +144,7 @@
         android:ems="10"
         android:hint="@string/equipo"
         android:focusable="false"
-        android:maxLength="10"  />
+        android:maxLength="2"  />
 
     <TextView
         android:id="@+id/textViewBorradoTitulo"
